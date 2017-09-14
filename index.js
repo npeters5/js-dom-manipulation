@@ -24,31 +24,31 @@ const parent = child.parentNode;
 //console.log('previousSibling', child.previousSibling);
 
 // Targeting specific elements -- HTMCollection, live!
-const links = document.getElementsByTagName('a'); // HTMLCollection
+const links = document.getElementsByTagName("a"); // HTMLCollection
 // console.log(links);
 // links[0].remove();
 // console.log(links);
 
 // Get by id -- HTMLElement, static
-const book = document.getElementById('book');
+const book = document.getElementById("book");
 // console.log(book);
 // book.remove();
 // console.log(book);
 
 // Get by class -- HTMLCollection, live!
-const titlesByClass = document.getElementsByClassName('title');
+const titlesByClass = document.getElementsByClassName("title");
 // console.log(titlesByClass);
 // titlesByClass[0].remove();
 // console.log(titlesByClass);
 
 // Get all by selector -- NodeList, static
-const titles = document.querySelectorAll('.title');
+const titles = document.querySelectorAll(".title");
 // console.log(titles);
 // titles[0].remove();
 // console.log(titles);
 
 // Get one by selector -- Element, static
-const oneTitle = document.querySelector('h1.title');
+const oneTitle = document.querySelector("h1.title");
 // console.log(oneTitle);
 // oneTitle.remove();
 // console.log(oneTitle);
@@ -72,10 +72,10 @@ console.log(links instanceof HTMLCollection); // true
 /////////////////
 
 // Create a node/element, returns element of that particular type
-const divTag = document.createElement('div'); // HTMLDivElement
+const divTag = document.createElement("div"); // HTMLDivElement
 
 // Create a textNode
-const textNode = document.createTextNode('Here is another div!');
+const textNode = document.createTextNode("Here is another div!");
 console.log(textNode instanceof Text); // true
 
 //////////////////////
@@ -107,12 +107,14 @@ divTag.appendChild(textNode);
 // What kind of Node is it?
 
 // Attributes
-const inputEl = document.createElement('input');
-inputEl.setAttribute('type', 'text');
+const inputEl = document.createElement("input");
+inputEl.setAttribute("type", "text");
+inputEl.setAttribute("data-tshirt", "secret");
+
 body.appendChild(inputEl);
 
 // Classes
-inputEl.classList.add('fancy');
+inputEl.classList.add("fancy");
 
 // What else?
-inputEl.autocomplete = 'on';
+inputEl.autocomplete = "on";
