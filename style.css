@@ -5,7 +5,7 @@
 
 /* Base element styles */
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   line-height: 1.6;
   color: #3a3a3a;
 }
@@ -190,4 +190,16 @@ footer {
   .directions {
     grid-column: span 1;
   }
+}
+
+.parent {
+  height: 250px;
+  background: red;
+}
+
+.ice-cream {
+  height: 100px;
+  width: 50%;
+  margin: 0 auto;
+  background: green;
 }
