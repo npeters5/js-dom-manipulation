@@ -42,6 +42,13 @@
   <div class="help"></div>
 
   <script>
+    const censored = document.querySelector('.censored');
+    //Q=81, W=87, X=88//
+    censored.eventListener('keydown', (event) => {
+      if (event.keyCode === 81 || event.keyCode === 87 || event.keyCode === 88) {
+        event.preventDefault();
+      }
+    })
     const bar = document.querySelector(".progress div");
     addEventListener('scroll', () => {
       const max = document.body.scrollHeight - window.innerHeight;
@@ -59,6 +66,7 @@
       });
       field.addEventListener('blur', () => help.innerText = '');
     }
+    //setTimeout(() => console.log("Ha ha scared you!"), 2000);
   </script>
 </body>
 
